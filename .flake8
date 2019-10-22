@@ -1,0 +1,4 @@
+[flake8]
+# Don't complain about modifications from `black`:
+max_line_length=88
+extend_ignore=E203

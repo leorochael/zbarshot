@@ -1,0 +1,19 @@
+#!/bin/bash
+set -x
+# shotdir=$(mktemp -d)
+# notify-send "Drag to capture barcode from screen"
+# gnome-screenshot -a -f $shotdir/screenshot.png
+# barcode=$(zbarimg -q --raw $shotdir/screenshot.png)
+# echo $barcode|xclip -selection clipboard
+# notify-send "Scanned barcode: $barcode"
+# rm -rf $shotdir
+
+scriptname="$0"
+linktarget="$(readlink -e $0)"
+if [ -n "$linktarget" ]; then
+    scriptname="$linktarget"
+fi
+
+scriptdir=$(cd $(dirname "$scriptname"); pwd)
+
+exec python3 $scriptdir/zbarshot.py

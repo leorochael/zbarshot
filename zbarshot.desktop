@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=ZBarShot
+Comment=Decode barcode from image captured from user delimited screenshot
+Exec=zbarshot
+Icon=zbarshot.svg
+Terminal=false
+Type=Application
+Categories=Utility;Scanning;

@@ -1,0 +1,14 @@
+# VS Code artifacts
+/.vscode
+
+# virtualenv artifacts:
+/bin
+/lib
+/share
+/include
+
+# Python artifacts
+__pycache__
+
+# Python support artifacts
+/.mypy_cache
